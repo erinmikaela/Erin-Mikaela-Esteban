@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width" , intial-scale="1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="script.js"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
   </head>
   <body>
     <nav id="desktop-nav">
-        <div class="logo"> Erin Esteban </div>
+        <div class="logo"> Erin Mikaela </div>
         <div>
             <ul class="nav-links">
                 <li> <a href="#about">About</a> </li>
@@ -19,31 +18,45 @@
                 <li> <a href="#contacts">Contacts</a> </li>
             </ul>
         </div>
-
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo"> Erin Esteban </div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
+      <div class="logo"> Erin Mikaela </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
                 <li> <a href="#about" onclick="toggleMenu()">About</a> </li>
                 <li> <a href="#experience" onclick="toggleMenu()">Experience</a> </li>
                 <li> <a href="#projects" onclick="toggleMenu()">Projects</a> </li>
                 <li> <a href="#contacts" onclick="toggleMenu()">Contacts</a> </li>
+        </div>
+      </div>
+    </nav>
+    <section id ="profile">
+        <div class = "section__pic-container">
+            <img src = "./ASSETS/author.png" alt = "Profile Picture"/>
+        </div>
+        <div class = "section__text">
+            <p class = "section__text"> Hi! I'm</p>
+            <h1 class= "title"> Erin Esteban</h1>
+            <p class = "section__text__p2"> BSIS student at Technological University of the Philippines </p>
+            <div class ="btn-container">
+                <button class = "btn btn-color-2" onclick="window.open('./ASSETS/sample-CV.pdf')">
+                    Download CV
+                </button>
+                <button class = "btn btn-color-1" onclick = "location.href = './#contacts'">
+                    Contact Info
+                </button>
+            </div>
+            <div id ="socials-container">
+                <img src="./ASSETS/linkedin.png" alt ="My LinkedIn Profile" class ="icon" onclick = "location.href ='https://linkedin.com'"/>
+                <img src="./ASSETS/github.png" alt ="My GitHub Profile" class = "icon" onclick ="location.href='https://github.com/erinmikaela'"/>
             </div>
         </div>
-    </nav>
-
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
