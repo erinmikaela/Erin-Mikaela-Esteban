@@ -10,6 +10,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  height: 1000vh;
+  background-color: #f8f8f0;
 }
 
 html {
@@ -133,6 +135,16 @@ a:hover {
   transform: none;
 }
 
+.banner {
+	width: 1260px;
+	height: 70vh;
+	background-position: initial;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url(https://raw.githubusercontent.com/erinmikaela/personal-blog/41a2c0ba425a6c040a775b92267791f955533ec3/ASSETS/banner.svg);
+	background-attachment: fixed;
+}
+
 /*Section*/
 section {
     padding-top: 4vh;
@@ -234,3 +246,31 @@ section {
 .btn-container {
     gap:1rem;
 }
+
+/* Sticky navigation bar for desktop */
+#desktop-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures it stays on top */
+  background-color: #f8f8f0; /* Or your desired color */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none; /* Optional for a shadow effect */
+}
+
+/* Sticky navigation bar for mobile (hamburger menu) */
+#hamburger-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures it stays on top */
+  background-color: #f8f8f0; /* Or your desired color */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none; /* Optional for a shadow effect */
+}
+
+/* Scrolled state */
+.nav-scrolled {
+  background-color: rgba(0, 255, 0, 0.8); /* Bright green for testing */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Strong shadow */
+}
+
+
