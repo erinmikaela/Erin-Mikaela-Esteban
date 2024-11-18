@@ -5,279 +5,70 @@
 * {
   margin: 0;
   padding: 0;
-  /*border: red solid 1px;*/
+  box-sizing: border-box;
+  border: red solid 1px;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  height: 1000vh;
-  background-color: #f8f8f0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-p {
-  color: rgb(85, 85, 85);
-}
-
-/* Desktop Nav */
-nav,
-.nav-links {
-    display: flex;
-}
-
-nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 20vh;
-}
-
-.nav-links {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
-}
-
-.nav-links a{
-  text-decoration: none;
-  color: black;
-  padding: 15px 20px;
-}
-
-a:hover {
-    color: gray;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: black;
-}
-
-.logo{
-    font-size: 2rem;
-}
-
-.logo:hover {
-    cursor: pointer;
-}
-
-/* Hamburger Menu*/
-
-#hamburger-nav {
-  display: none;
-}
-
-.hamburger-menu{
-  position: relative;
-  display: inline-block;
-}
-
-.hamburger-icon {
+.container {
+  width: 1280px;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 25px;
-  width: 30px;
-  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
 }
-
-.hamburger-icon span {
+.main-head {
   width: 100%;
-  height: 2px;
-  background-color: gray;
-  transition: all 0.3 ease-in-out;
-}
-
-.menu-links {
+  height: 54px;
   position: absolute;
-  top: 100px;
-  right: 0;
-  background-color: white;
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 9999;
+}
+.main-head .main-menu {
+  width: 100%;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.menu-links a {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  font-size: 2rem;
+.main-head .main-menu .logo {
+  font-size: 25px;
+  margin: 10px;
+  font-family: 'Poppins';
+  font-weight: 700;
   color: black;
-  text-decoration: none;
-  transition: all 0.3 ease-in-out;
 }
 
-.menu-links li {
+.main-head .main-menu .desktop-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-head .main-menu .desktop-menu .nav-list {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-head .main-menu .desktop-menu .nav-list .nav-list-item {
   list-style: none;
+  padding: 15px 30px;
 }
 
-.menu-links.open {
-  max-height: 300px;
+.main-head .main-menu .desktop-menu .nav-list .nav-list-item .nav-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  transition: all .1s ease-in-out;
 }
 
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
+.main-head .main-menu .desktop-menu .nav-list .nav-list-item .nav-link:hover {
+  color: #B53471;
 }
-
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-.banner {
-	width: 1260px;
-	height: 70vh;
-	background-position: initial;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-image: url(https://raw.githubusercontent.com/erinmikaela/personal-blog/41a2c0ba425a6c040a775b92267791f955533ec3/ASSETS/banner.svg);
-	background-attachment: fixed;
-}
-
-/*Section*/
-section {
-    padding-top: 4vh;
-    height: 100vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
-}
-
-/*Profile Section*/
-#profile{
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height: 80vh;
-}
-
-.section__pic-container {
-    display: flex;
-    height: 500px;
-    width: 500px;
-}
-
-.section__text {
-    text-align: center;
-}
-
-.section__text__p1 {
-    text-align: center;
-}
-
-.section__text__p2 {
-    text-align: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.title {
-    font-size: 3rem;
-    text-align: center;
-}
-
-.socials-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    gap: 1rem;
-}
-
-/*Icons*/
-.icon {
-    cursor: pointer;
-    height: 2rem;
-}
-
-/*Buttons*/
-.btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.btn {
-    font-weight: 600;
-    transition: all 300ms ease;
-    padding: 1rem;
-    width: 8rem;
-    border-radius: 2rem;
-    background-color:antiquewhite
-}
-
-.btn-color-1,
-.btn-color-2 {
-    border: rgb(53,53,53) 0.1 rem solid;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
-    cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-    background-color: rgb(53,53,53);
-    color: white;
-}
-
-.btn-color-1:hover {
-    background-color: rgb(0,0,0);
-}
-
-.btn-color-2 {
-    background: none;
-}
-
-.btn-color-2:hover {
-    border: rgb(255,255,255) 0.1rem solid;
-}
-
-.btn-container {
-    gap:1rem;
-}
-
-/* Sticky navigation bar for desktop */
-#desktop-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: rgba(255, 255, 255, 1);
-  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Sticky navigation bar for mobile (hamburger menu) */
-#hamburger-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* Ensures it stays on top */
-  background-color: #f8f8f0; /* Or your desired color */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: none; /* Optional for a shadow effect */
-}
-
-/* Scrolled state */
-.nav-scrolled {
-  background-color: rgba(0, 255, 0, 0.8); /* Bright green for testing */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Strong shadow */
-  backdrop-filter: blur(5px);
-}
-
-
