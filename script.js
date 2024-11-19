@@ -1,9 +1,17 @@
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open"); 
-}
+const hamburgerNav = document.querySelector('.hamburger-nav');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburgerNav.addEventListener('click', () => {
+  hamburgerNav.classList.toggle('active');
+  navMenu.classList.toggle('active');
+})
+
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+addEventListener('click', () => {
+  hamburgerNav.classList.remove('active');
+  navMenu.classList.remove('active');
+})
+}))
 
 document.addEventListener('scroll', () => {
 const desktopNav = document.querySelector('#desktop-nav');
