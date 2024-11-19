@@ -30,17 +30,7 @@
 	}
 }
 
-@media screen and (max-width: 650px) {
-	.nav-links {
-		flex-direction: column;
-		gap: 0.5rem;
-		text-align: center;
-	}
-
-	.logo {
-		font-size: 1.5rem;
-	}
-
+@media screen and (max-width: 768px) {
 	#profile {
 		height: 85vh;
 		margin-bottom: 0;
@@ -58,5 +48,42 @@
 
 	.title {
 		font-size: 2rem;
+	}
+
+	.hamburger-nav {
+		display: block;
+	}
+
+	/*Hamburger Menu Animation*/
+	.hamburger-nav.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	.hamburger-nav.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.hamburger-nav.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.nav-menu {
+		position: fixed;
+		left: -100%;
+		top: 70px;
+		gap: 0;
+		flex-direction: column;
+		background-color: #f8f8f0;
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+	}
+
+	.nav-item {
+		margin: 16px 0;
+	}
+
+	.nav-menu.active {
+		left: 0;
 	}
 }
