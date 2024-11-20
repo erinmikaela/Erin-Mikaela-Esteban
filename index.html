@@ -1,52 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Erin Esteban</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="media.css"/>
-  </head>
-  <body>
-    <div class="banner"></div>
-    <header>
-      <nav class="desktop-nav">
-        <a href="#" class="nav-brand"> Erin </a>  
-          <ul class="nav-menu">
-            <li class="nav-item"> 
-              <a href="#about" class="nav-link">About</a> </li>
-            <li class="nav-item"> 
-              <a href="#experience" class="nav-link">Experience</a> </li>
-            <li class="nav-item"> 
-              <a href="#skills" class="nav-link">Skills</a> </li>
-            <li class="nav-item"> 
-              <a href="#projects" class="nav-link">Projects</a> </li>
-            <li class="nav-item"> 
-              <a href="#contacts" class="nav-link">Contacts</a> </li>
-          </ul>
-
-        <div class="hamburger-nav">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-    </header>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./ASSETS/author.png" alt="Profile Picture"/>
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1"> Hi! I'm</p>
-        <h1 class="title"> Erin Esteban</h1>
-        <p class="section__text__p2"> BSIS student at Technological University of the Philippines </p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./ASSETS/sample-CV.pdf')">
-            Download CV
-          </button>
-        </div>
-      </div>
-    </section>
-    <script src="script.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Erin Esteban</title>
+	</head>
+	<body bgcolor="#ccc5b9">
+		<section id="#about">
+				<nav id="desktop-nav">
+					<h1>
+						<font size="7"> Erin </font>
+						&nbsp;&nbsp;&nbsp;
+						<a href="#about">
+							<font color="black"> About </font>
+						</a>
+						&nbsp;&nbsp;&nbsp;
+						<a href="#skills"> <font color="black"> Skills </font></a>
+						&nbsp;&nbsp;&nbsp;
+						<a href="#projects"> <font color="black"> Projects </font></a>
+						&nbsp;&nbsp;&nbsp;
+						<a href="#contact"><font color="black"> Contact </font></a>
+					</h1>
+				</nav>
+				<div>
+					<table>
+						<tr>
+							<td>
+								<img
+									src="/ASSETS/author.png"
+									alt="author"
+									width="500"
+									height="500"
+								/>
+							</td>
+							<td>
+								<font size="7"> Hey there, I'm Erin! </font>
+								<p>
+									<br />
+									Erin Esteban | 3rd year | Bachelor of Science in Information Systems | TUP-
+									Manila <br />
+									I've made few programs for school projects using C, C++, and
+									Java language. <br />
+									I also have background in database management using MySQL and
+									Foxpro.
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+		</section>
+		<section id="skills">
+				<br />
+				<font size="7"> Skills </font>
+				<table border="1">
+					<tr align="center">
+						<td>Language</td>
+						<td>Proficiency</td>
+						<td>Libraries</td>
+						<td>Tools</td>
+					</tr>
+					<tr>
+						<td>
+							<ol>
+								<li>C</li>
+								<li>C++</li>
+								<li>Java</li>
+								<li>HTML/CSS</li>
+							</ol>
+						</td>
+						<td>
+							<ol>
+								<li>Beginner</li>
+								<li>Beginner</li>
+								<li>Beginner</li>
+								<li>Beginner</li>
+							</ol>
+						</td>
+						<td>
+							<ol>
+								<li>stdio.h,stdlib.h;</li>
+								<li>iostream,fstream,iomanip,string,conio.h,windows.h,thread</li>
+								<li>javax.swing.*,java.sql.*,java.awt.Color,java.util.regex.*</li>
+								<li>-</li>
+							</ol>
+						</td>
+						<td>
+							<ol>
+								<li>Code::Blocks</li>
+								<li>Code::Blocks</li>
+								<li>NetBeans</li>
+								<li>Visual Studio Code</li>
+							</ol>
+						</td>
+					</tr>
+				</table>
+		</section>
+		<section id="projects">
+			<br />
+			<font size="7"> Projects </font>
+			<h2 align="center">Minesweeper</h2>
+			<h1 align="center">
+				<img src="/ASSETS/minesweeper1.jpg" alt="mainmenu" width="40%" />
+				<img src="/ASSETS/minesweeper2.jpg" alt="minesweepergame" width="40%" />
+			</h1>
+			<table align="center" border="1">
+				<tr>
+					<td>A classic minecweeper game made in C language. The<br/>user can reveal a square by typing the coordinates <br/>
+					(X,Y) within the 20x20 square area. The score is then <br/>saved and can be viewed in the scoreboard.</td>
+					<td>
+						<p align="center">C Language <br />Libraries:</p>
+						<ul>
+							<li>stdio.h</li>
+							<li>stdlib.h</li>
+							<li>time.h</li>
+							<li>windows.h</li>
+							<li>conio.h</li>
+							<li>mmstream.h</li>
+							<li>"logo.h"</li>
+						</ul>
+					</td>
+					<td>
+						<a
+							href="https://github.com/erinmikaela/firstyear-activities-and-projects/tree/main/Minesweeper"
+							>GitHub Repository</a
+						>
+					</td>
+				</tr>
+			</table>
+			<h2 align="center">Math Tutor V2.0</h2>
+			<h1 align="center">
+				<img src="/ASSETS/mathtutor.jpg" alt="mathtutor" width="40%" />
+			</h1>
+			<table align="center" border="1">
+				<tr>
+					<td>It helps the user perfom basic math calculation by <br/>generating random 2-digit addition, subtraction, 
+						<br/> multiplication, or division problems. Math Tutor V2.0 is the <br/>final version of our C programming activity 
+						<br/>that incorporates all of our previous lessons such <br/>
+						as, loops, functions, switch cases, and learning how to use<br/>srand() function.</td>
+					<td>
+						<p align="center">C Language <br />Libraries:</p>
+						<ul>
+							<li>stdio.h</li>
+							<li>stdlib.h</li>
+							<li>time.h</li>
+							<li>string.h</li>
+							<li>conio.h</li>
+							<li>windows.h</li>
+						</ul>
+					</td>
+					<td>
+						<a
+							href="https://github.com/erinmikaela/firstyear-activities-and-projects/tree/main/Math%20Tutor"
+							>GitHub Repository</a
+						>
+					</td>
+				</tr>
+			</table>
+			<h2 align="center">ASCII Painter</h2>
+			<h1 align="center">
+				<img src="/ASSETS/asciipainter1.jpg" width="40%" />
+				<img src="/ASSETS/asciipainter2.jpg" alt="asciipainterprogram" width="40%" />
+			</h1>
+			<table align="center" border="1">
+				<tr>
+					<td>An open art canvas inspired by pixel art tools.This is the<br/> first group project we made in programming. It can <br/> 
+					import and export creations made through the program. <br/>We added wide variety of colors to choose from, and<br/>the user can
+				move the cursor pointer using  WASD.</td>
+					<td>
+						<p align="center">C Language <br />Libraries:</p>
+						<ul>
+							<li>stdio.h</li>
+							<li>stdlib.h</li>
+							<li>ctype.h</li>
+							<li>MMstream.h</li>
+							<li>conio.h</li>
+							<li>windows.h</li>
+						</ul>
+					</td>
+					<td>
+						<a
+							href="https://github.com/erinmikaela/firstyear-activities-and-projects/tree/main/ASCII%20Painter"
+							>GitHub Repository</a
+						>
+					</td>
+				</tr>
+			</table>
+			<h2 align="center">ATM Simulation</h2>
+			<h1 align="center">
+				<img src="/ASSETS/ATMsimulation.jpg" width="40%" />
+			</h1>
+			<table align="center" border="1">
+				<tr>
+					<td>This ATM Simulation program can create new account, <br/>login existing account/s, view balance inquiry,
+					withdraw <br/>and deposit money, perform fund transfer, and change PIN number.</td>
+					<td>
+						<p align="center">C++ Language <br />Libraries:</p>
+						<ul>
+							<li>iostream</li>
+							<li>fstream</li>
+							<li>iomanip</li>
+							<li>string</li>
+							<li>conio.h</li>
+							<li>windows.h</li>
+							<li>thread</li>
+						</ul>
+					</td>
+					<td>
+						<a
+							href="https://github.com/erinmikaela/secondyear-activities-and-projects/tree/main/ATM%20Simulation"
+							>GitHub Repository</a
+						>
+					</td>
+				</tr>
+			</table>
+			<h2 align="center">School Admin Database Website</h2>
+			<h1 align="center">
+				<img src="/ASSETS/javawebsite1.jpg" width="40%" />
+				<img src="/ASSETS/javawebsite2.jpg" width="40%" />
+			</h1>
+			<table align="center" border="1">
+				<tr>
+					<td>It is database management system for a fictional university. School<br/>
+					admins can insert, delete, modify, and view student records through<br/>this
+					system. This is the only project I made in java that incorporates<br/> the jswing and jframe function.</td>
+					<td>
+						<p align="center">Java Language <br />Libraries:</p>
+						<ul>
+							<li>javax.swing.*</li>
+							<li>java.util.regex.*</li>
+							<li>java.awt.Color</li>
+							<li>java.sql.*</li>
+						</ul>
+					</td>
+					<td>
+						<a
+							href="https://github.com/erinmikaela/secondyear-activities-and-projects/tree/main/Student%20Record%20UI%20Java"
+							>GitHub Repository</a
+						>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section id="#contact">
+			<br />
+			<font size="7"> Contact me </font>
+			<form>
+				<label for="name">Full Name:</label><br>
+				<input type="text" id="name" name="name" value="Enter full name"><br>
+				<label for="email">Email:</label><br>
+				<input type="text" id="email" name="email" value="Enter email"><br>
+				<label for="email">Message:</label><br>
+				<input type="text" id="message" name="message" value="Write a message"><br><br>
+				<input type="submit" value="Submit">
+			  </form> 
+		</section>
+		<footer align="center">
+			<p>&copy;2024 Erin Esteban<br />
+			<a href="https://github.com/erinmikaela"> GitHub </a>
+			&nbsp;&nbsp;&nbsp;
+			<a href="mailto:erinmikaela.esteban@tup.edu.ph"> Email </a>
+			&nbsp;&nbsp;&nbsp;
+			<a href="https://www.facebook.com/onlylokii"> Facebook </a></p>
+		  </footer>
+	</body>
 </html>
